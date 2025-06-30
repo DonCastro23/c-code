@@ -5,7 +5,6 @@ Project Description:
 Developed a fully interactive Rock, Paper, Scissors game in C featuring a console-based interface, input validation, and a randomized computer opponent. The project demonstrates fundamental programming concepts including control structures, user input handling, function modularity, and use of the C standard library.
 
 Screenshots:
-[Uploading Final_Project_Code.txt…]()
 
 ![Screenshot 2023-08-14 184158](https://github.com/user-attachments/assets/7326ea24-1002-4365-a4ae-10529678b787)
 
