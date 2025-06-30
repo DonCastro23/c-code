@@ -1,0 +1,137 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+// Function declarations
+int getUserChoice();
+int getComputerChoice();
+void determineWinner(int userChoice, int computerChoice);
+
+int main() {
+    srand(time(NULL)); // Seed the random number generator
+
+    printf("Welcome to Rock, Paper, Scissors!\n\n");
+    printf(" \n");
+
+    while (1) {
+        printf("            Main Menu\n");
+        printf("=================================\n");
+        printf("          1. Play game\n");
+        printf("          2. Instructions\n");
+        printf("          3. Quit\n");
+        printf("=================================\n");
+        printf(" \n");
+
+        int choice;
+        scanf_s("%d", &choice);
+
+        switch (choice) {
+        case 1:
+            printf(" \n");
+            printf("Let's play!\n");
+            break;
+        case 2:
+            printf(" \n");
+            printf("Instructions:\n");
+            printf("Rock beats scissors.\n");
+            printf("Paper beats rock.\n");
+            printf("Scissors beats paper.\n");
+            printf(" \n");
+            break;
+        case 3:
+            printf(" \n");
+            printf("Thanks for playing!\n");
+            printf(" \n");
+            return 0;
+        default:
+            printf(" \n");
+            printf("Invalid choice. Please enter a number between 1 and 3.\n");
+            printf(" \n");
+            continue;
+        }
+
+        while (1) {
+            printf(" \n");
+            printf("Enter your choice:\n");
+            printf("1. Rock\n");
+            printf("2. Paper\n");
+            printf("3. Scissors\n");
+            printf("4. Quit\n");
+            printf(" \n");
+
+            int userChoice = getUserChoice();
+            if (userChoice == 4) {
+                break; // Exit the inner loop if user chooses to quit
+            }
+
+            int computerChoice = getComputerChoice();
+
+            printf(" \n");
+            printf("You chose ");
+            switch (userChoice) {
+            case 1:
+                printf("rock.\n");
+                break;
+            case 2:
+                printf("paper.\n");
+                break;
+            case 3:
+                printf("scissors.\n");
+                break;
+            default:
+                break;
+            }
+
+            printf(" \n");
+            printf("The computer chose ");
+            switch (computerChoice) {
+            case 1:
+                printf("rock.\n");
+                break;
+            case 2:
+                printf("paper.\n");
+                break;
+            case 3:
+                printf("scissors.\n");
+                break;
+            default:
+                break;
+            }
+
+            determineWinner(userChoice, computerChoice);
+        }
+    }
+}
+
+// Function definitions
+int getUserChoice() {
+    int choice;
+    scanf_s("%d", &choice);
+    while (choice < 1 || choice > 4) {
+        printf("Invalid choice. Please enter a number between 1 and 4.\n");
+        scanf_s("%d", &choice);
+    }
+    return choice;
+}
+
+int getComputerChoice() {
+    return (rand() % 3) + 1;
+}
+
+void determineWinner(int userChoice, int computerChoice) {
+    if (userChoice == computerChoice) {
+        printf("It's a tie!\n");
+        printf(" \n");
+    }
+    else if ((userChoice == 1 && computerChoice == 3) ||
+        (userChoice == 2 && computerChoice == 1) ||
+        (userChoice == 3 && computerChoice == 2)) {
+        printf("You win!\n");
+        printf(" \n");
+    }
+    else {
+        printf("The computer wins!\n");
+        printf(" \n");
+    }
+}
+
