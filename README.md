@@ -1,22 +1,21 @@
 Rock Paper Scissors
 
-Project Description: Developed a fully interactive Rock, Paper, Scissors game in C featuring a console-based interface, input validation, and a randomized computer opponent. The project demonstrates fundamental programming concepts including control structures, user input handling, function modularity, and use of the C standard library.
+Project Description:
+Developed a fully interactive Rock, Paper, Scissors game in C featuring a console-based interface, input validation, and a randomized computer opponent. The project demonstrates fundamental programming concepts including control structures, user input handling, function modularity, and use of the C standard library.
 
 Screenshots:
+![Screenshot 2023-08-14 184158](https://github.com/user-attachments/assets/83fce334-e41f-46a2-a919-7e652e5103b3)
 
-Screenshots: Uploading Final_Project_Code.txt…
+![Screenshot 2023-08-14 184230](https://github.com/user-attachments/assets/ddb9ab1d-7b3a-49b5-a203-b7b1e6ee3407)
 
-Screenshot 2023-08-14 184158
+![Screenshot 2023-08-14 184310](https://github.com/user-attachments/assets/3b3b734e-81ae-4ca2-aad7-0639b824e740)
 
-Screenshot 2023-08-14 184230
+![Screenshot 2023-08-14 184336](https://github.com/user-attachments/assets/e1fce345-2ee7-404f-93e8-82d1ff9af2b3)
 
-Screenshot 2023-08-14 184310
+![Screenshot 2023-08-14 184358](https://github.com/user-attachments/assets/00b967b6-81fc-4b12-8508-438dd8f0e068)
 
-Screenshot 2023-08-14 184336
+![Screenshot 2023-08-14 184455](https://github.com/user-attachments/assets/df90d5d5-865a-40bd-8695-488c8ae29279)
 
-Screenshot 2023-08-14 184358
-
-Screenshot 2023-08-14 184455
 
 Key Features:
 
